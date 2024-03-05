@@ -23,7 +23,7 @@ $sum = array();
     }
 
 // Output the result matrix
-echo "Result of matrix addition:<br>";
+echo "Result of 3*3 matrix addition:<br>"; 
 for ($i = 0; $i < 3; $i++) 
 {
     for ($j = 0; $j < 3; $j++)
