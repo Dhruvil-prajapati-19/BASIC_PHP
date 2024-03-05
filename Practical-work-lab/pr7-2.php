@@ -1,22 +1,17 @@
 <?php
 class Person 
 {
-  private $name;
+  private $name; // Private properties to store name and age
   private $age;
-
-  public function setdata($name, $age) 
+  
+  public function getdata($name, $age) 
   {
-    $this->name = $name;
-    $this->age = $age;
-  }
-
-  public function getdata() 
-  {
-    return $this->name . ' ' . $this->age; // Added space between name and age
+    print($name);
+    print "\n";
+    print($age);
   }
 }
 
 $person = new Person();
-$person->setdata("jay", 30); // Added $ before person variable
-echo $person->getdata(); // Added echo to display the result
+$person->getdata("Dhruv", 30);
 
