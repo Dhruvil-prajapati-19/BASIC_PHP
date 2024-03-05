@@ -1,14 +1,17 @@
 <?php
-class Person {
+class Person 
+{
   private $name;
   private $age;
 
-  public function setdata($name, $age) {
+  public function setdata($name, $age) 
+  {
     $this->name = $name;
     $this->age = $age;
   }
 
-  public function getdata() {
+  public function getdata() 
+  {
     return $this->name . ' ' . $this->age; // Added space between name and age
   }
 }
