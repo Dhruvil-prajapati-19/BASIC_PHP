@@ -1,14 +1,14 @@
-<?
+<?php
 // user define fumction
 
 function display()
 {
-    echo "hello World";
+    echo " hello World";
 }
 
 function displayParameter($a)
 {
-    echo "hello $a , \n how are you ";
+    echo "\n hello $a , \n how are you ";
 }
 
 display();
