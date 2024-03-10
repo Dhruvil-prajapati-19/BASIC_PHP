@@ -11,7 +11,7 @@ function fibonacci($n) {
     return $fibonacci;
 }
 
-$terms = 10; // Change this to the desired number of Fibonacci terms
+$terms = 10; // Change this to the desired aber of Fibonacci terms
 
 $fibonacciSequence = fibonacci($terms);
 

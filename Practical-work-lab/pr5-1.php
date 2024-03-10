@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $wordCount = countWords($inputString);
     
     echo "<br>Length of the string: " . $length . "<br>";
-    echo "Number of words in the string: " . $wordCount;
+    echo "aber of words in the string: " . $wordCount;
 }
 
 function calculateStringLength($str) {

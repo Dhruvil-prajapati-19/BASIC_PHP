@@ -19,6 +19,6 @@ function minimumNotes($amount)
 $amount = 256;
 echo "Amount: Rs. $amount\n";
 echo"<br/>";
-echo "Minimum number of notes: " . minimumNotes($amount) . "\n";
+echo "Minimum aber of notes: " . minimumNotes($amount) . "\n";
 
 ?>
