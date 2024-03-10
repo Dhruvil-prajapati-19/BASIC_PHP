@@ -1,21 +1,21 @@
 <?php
 
-// a. Function to generate a random aber between the given range
-function generateRandomaber() {
+// a. Function to generate a random number between the given range
+function generateRandomNumber() {
     $min = 1;
     $max = 100;
-    $randomaber = rand($min, $max);
-    echo "Random aber between $min and $max: $randomaber\n";
+    $randomNumber = rand($min, $max);
+    echo "Random number between $min and $max: $randomNumber\n";
 }
 
-// b. Function to display the binary, octal, and hexadecimal of a given decimal aber
+// b. Function to display the binary, octal, and hexadecimal of a given decimal number
 function displayConversions() {
-    $decimalaber = 255;
-    echo "Decimal aber: $decimalaber\n";
+    $decimalNumber = 255;
+    echo "Decimal number: $decimalNumber\n";
     echo "Conversions:\n";
-    echo "Binary: " . decbin($decimalaber) . "\n";
-    echo "Octal: " . decoct($decimalaber) . "\n";
-    echo "Hexadecimal: " . dechex($decimalaber) . "\n";
+    echo "Binary: " . decbin($decimalNumber) . "\n";
+    echo "Octal: " . decoct($decimalNumber) . "\n";
+    echo "Hexadecimal: " . dechex($decimalNumber) . "\n";
 }
 
 // c. Function to display the sin, cos, and tan of the given angle (in radians)
@@ -29,10 +29,9 @@ function displayTrigonometricFunctions() {
 }
 
 // Call each function
-generateRandomaber();
+generateRandomNumber();
 echo"<br/>";
 displayConversions();
 echo"<br/>";
 displayTrigonometricFunctions();
 
-?>
