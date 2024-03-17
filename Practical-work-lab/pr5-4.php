@@ -35,4 +35,4 @@ $encodedMessage = encodeToMorse($message);
 echo "Original Message: $message";
 echo"<br/>";
 echo "Encoded Message: $encodedMessage";
-?>
+

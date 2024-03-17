@@ -36,8 +36,8 @@ echo "\n";
 echo "<br/>";
 // Nesting loops: Nested loops demonstrate loops within loops, which are useful for dealing with multi-dimensional data or generating complex patterns.
 echo "Nesting loops:\n";
-for ($row = 1; $row <= 3; $row++) {
-    for ($col = 1; $col <= 3; $col++) {
+for ($row = 1; $row <= 2; $row++) {
+    for ($col = 1; $col <= 2; $col++) {
         echo "Row: $row, Column: $col\n";
     }
 }
