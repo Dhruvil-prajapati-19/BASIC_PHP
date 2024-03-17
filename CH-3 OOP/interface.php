@@ -1,12 +1,14 @@
 <?php
 
 // Define an interface
-interface A{
+interface display
+{
     function displayI(); // Method declaration without implementation
 }
 
 // Implement the interface in a class
-class B implements A{
+class B implements display
+{
     function displayI(){
         echo "Interface method implementation in class B\n";
     }
