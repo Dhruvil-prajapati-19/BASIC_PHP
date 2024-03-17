@@ -93,4 +93,3 @@ echo "++a: " . ++$a . "\n"; // Pre-increment, increments then prints
 echo "a after pre-increment: $a\n";
 echo "--b: " . --$b . "\n"; // Pre-decrement, decrements then prints
 echo "b after pre-decrement: $b\n";
-?>
