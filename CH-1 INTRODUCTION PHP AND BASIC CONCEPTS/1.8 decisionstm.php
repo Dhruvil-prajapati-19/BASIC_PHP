@@ -1,9 +1,12 @@
 <?php
 print "normal if else";
 $x = 10;
-if ($x > 0) {
+if ($x > 0)
+ {
     echo "Positive";
-} else {
+}
+ else
+  {
     echo "Non-positive";
 }
 
@@ -12,14 +15,18 @@ echo "\n";
 
 // nested
 print "nested if else";
+
 $x = 10;
-if ($x > 0) {
-    if ($x % 2 == 0) {
+if ($x > 0)
+ {
+    if ($x % 2 == 0)
+     {
         echo "Positive even";
     } else {
         echo "Positive odd";
     }
-} else {
+} else 
+{
     echo "Non-positive";
 }
 
@@ -30,11 +37,14 @@ echo "\n";
 
 print "ladder if else";
 $y = 5;
-if ($y < $x) {
+if ($y < $x) 
+{
     echo "max x";
-} elseif ($y > $x) {
+} elseif ($y > $x) 
+{
     echo "max y";
-} else {
+} else 
+{
     echo "both equal";
 }
 
@@ -44,7 +54,8 @@ echo "\n";
 
 print "swich-case";
 $dayno = 0;
-switch ($dayno) {
+switch ($dayno) 
+{
     case 0:
         echo "Today is sunday";
         break;
@@ -62,4 +73,4 @@ $age = 10;
 $ternary = ($age < 18) ? "child" : "adult";
 echo "ternary:" . $ternary;
 
-?>
+

@@ -5,4 +5,3 @@ echo var_dump($a, $b);
 $a1 = array("hello", "123", "2");
 echo var_dump($a1);
 
-?>

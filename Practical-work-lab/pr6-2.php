@@ -12,7 +12,8 @@ function removeWhiteSpaces($str) {
     echo "<h2>Remove white spaces from the given string</h2>";
     echo str_replace(' ', '', $str);
 }
-function replaceWord($str, $search, $replace) {
+function replaceWord($str, $search, $replace) 
+{
     echo "<h2>Replace the given word from the given string</h2>";
     echo str_replace($search, $replace, $str);
 }
@@ -25,4 +26,3 @@ reverseString($string); // Output: "dlrow olleh"
 removeWhiteSpaces($string); // Output: "helloworld"
 replaceWord($string, $search, $replace); // Output: "hello universe"
 
-?>
