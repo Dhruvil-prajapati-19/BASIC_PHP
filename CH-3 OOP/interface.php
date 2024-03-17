@@ -9,11 +9,13 @@ interface display
 // Implement the interface in a class
 class A implements display
 {
-    function displayI(){
+    function displayI()
+    {
         echo "Interface method implementation in class B\n";
     }
     
-    function displayB(){
+    function displayB()
+    {
         echo "Class B method\n";
     }
 }
