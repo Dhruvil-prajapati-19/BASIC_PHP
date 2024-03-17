@@ -75,37 +75,37 @@ function hello(){
 2. **`func_get_arg($i)`**: Retrieves the value of a specific argument based on its position (`$i`) in the argument list.
 3. **`func_get_args()`**: Retrieves all arguments passed to a function as an array.
 */ 
-function sum()
+function maths()
  {
     $numArgs = func_num_args();  // Get the number of arguments
-    $sum = 0;
+    $maths = 0;
     for ($i = 0; $i < $numArgs; $i++)
      {
         $arg = func_get_arg($i); // Get the value of the argument at position $i
 
-        $sum = $sum + $arg;
+        $maths = $maths + $arg;
      }
-    return $sum;
+    return $maths;
 }
 
-// Call the sum function with different numbers of arguments
-echo "Sum of numbers: " . sum(1, 2, 3) . "\n"; 
-echo "Sum of numbers: " . sum(10, 20) . "\n";
+// Call the maths function with different numbers of arguments
+echo "maths of numbers: " . maths(1, 2, 3) . "\n"; 
+echo "maths of numbers: " . maths(10, 20) . "\n";
 
-function sum_as_array() 
+function maths_as_array() 
 {
     $args = func_get_args(); // Get all arguments as an array
-    $sum = 0;
+    $maths = 0;
     foreach ($args as $arg)
      {
-        $sum = $sum + $arg;
+        $maths = $maths + $arg;
      }
 
-    // Return the sum
-    return $sum;
+    // Return the maths
+    return $maths;
 }
-// Call the sum function with different numbers of arguments
-echo "Sum of numbers: " . sum_as_array(1, 2, 3, 4) . "\n"; // Calculates sum of 1, 2, 3, 4, and 5
-echo "Sum of numbers: " . sum_as_array(10, 20, 30) . "\n"; // Calculates sum of 10, 20, and 30
+// Call the maths function with different numbers of arguments
+echo "maths of numbers: " . maths_as_array(1, 2, 3, 4) . "\n"; // Calculates maths of 1, 2, 3, 4, and 5
+echo "maths of numbers: " . maths_as_array(10, 20, 30) . "\n"; // Calculates maths of 10, 20, and 30
 
 

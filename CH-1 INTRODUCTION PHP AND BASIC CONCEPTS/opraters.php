@@ -4,14 +4,14 @@
 
 $a = 10;
 $b = 5;
-$sum = $a + $b;
+$maths = $a + $b;
 $diff = $a - $b;
 $product = $a * $b;
 $quotient = $a / $b;
 $remainder = $a % $b;
 
 echo "Arithmetic Operators:\n";
-echo "Sum: $sum\n";
+echo "maths: $maths\n";
 echo "Difference: $diff\n";
 echo "Product: $product\n";
 echo "Quotient: $quotient\n";

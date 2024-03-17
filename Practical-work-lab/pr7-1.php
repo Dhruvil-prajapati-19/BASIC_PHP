@@ -4,7 +4,7 @@ class A {
     // Constructor
     public function __construct() {
         echo "Class A :Constructor called\n";
-        $a=5;$b=6;$sum=0;$sum=$a+$b; echo "sum:" . $sum . "\n"; 
+        $a=5;$b=6;$maths=0;$maths=$a+$b; echo "maths:" . $maths . "\n"; 
     }
 
     // Destructor
