@@ -7,7 +7,7 @@ interface display
 }
 
 // Implement the interface in a class
-class B implements display
+class A implements display
 {
     function displayI(){
         echo "Interface method implementation in class B\n";
@@ -19,7 +19,7 @@ class B implements display
 }
 
 // Instantiate the class
-$obj = new B();
+$obj = new A();
 
 // Call the interface method
 $obj->displayI(); // Outputs: Interface method implementation in class B
