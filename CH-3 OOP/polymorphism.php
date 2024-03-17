@@ -2,14 +2,17 @@
 // Overriding:
 // Superclass
 class A {
-    public function display() {
+    public function display()
+     {
         echo "class A";
     }
 }
 
 // Subclass overriding method
-class D extends A {
-    public function display() {
+class D extends A
+ {
+    public function display() 
+    {
         echo "class D ";
     }
 }   // output : class D
