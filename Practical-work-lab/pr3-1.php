@@ -37,14 +37,14 @@ if (isset($_POST['calculate'])) {
 <body>
     <h2>Simple Calculator</h2>
     <form method="post" action="">
-        <input type="aber" name="a" placeholder="Enter first aber" required>
+        <input type="number" name="a" placeholder="Enter first number" required>
         <select name="operator">
             <option value="+">+</option>
             <option value="-">-</option>
             <option value="*">*</option>
             <option value="/">/</option>
         </select>
-        <input type="aber" name="b" placeholder="Enter second aber" required>
+        <input type="number" name="b" placeholder="Enter second number" required>
         <input type="submit" name="calculate" value="Calculate">
     </form>
     <?php if (isset($_POST['calculate'])): ?>

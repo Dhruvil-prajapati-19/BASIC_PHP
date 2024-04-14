@@ -1,12 +1,12 @@
 <?php
-function multiplicationTable($aber) {
-    echo "Multiplication table for $aber:\n";
+function multiplicationTable($number) {
+    echo "Multiplication table for $number:\n";
     for ($i = 1; $i <= 10; $i++) {
-        echo "$aber x $i = " . ($aber * $i) . "\n";
+        echo "$number x $i = " . ($number * $i) . "\n";
     }
 }
 
-// Change the aber below to generate multiplication table for a different aber
-$aber = 7;
-multiplicationTable($aber);
-?>
+// Change the number below to generate multiplication table for a different number
+$number = 7;
+multiplicationTable($number);
+

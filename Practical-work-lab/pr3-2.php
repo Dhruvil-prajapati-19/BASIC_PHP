@@ -9,7 +9,7 @@
     <h2>Employee Payment Calculator</h2>
     <form action="" method="post">
         <label for="basic_salary">Enter Basic Salary:</label>
-        <input type="aber" id="basic_salary" name="basic_salary" required>
+        <input type="number" id="basic_salary" name="basic_salary" required>
         <button type="submit">Calculate</button>
     </form>
 
