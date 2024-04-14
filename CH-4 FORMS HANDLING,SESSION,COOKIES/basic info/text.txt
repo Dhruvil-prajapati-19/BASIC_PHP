@@ -1,0 +1,24 @@
+
+Superglobals in PHP are predefined variables that are available in all scopes throughout a script. They are automatically populated by PHP, and they provide information such as form input data, server and execution environment information, session data, and more.
+
+The superglobal variables in PHP include:
+
+1. **$_GET**: Contains data sent to the script via the HTTP GET method. It's commonly used to retrieve query string parameters from the URL.
+2. **$_POST**: Contains data sent to the script via the HTTP POST method. It's commonly used to retrieve form data submitted via HTML forms.
+3. **$_REQUEST**: Combines the contents of $_GET, $_POST, and $_COOKIE arrays into one array. It's not recommended to use $_REQUEST due to security reasons.
+4. **$_FILES**: Contains information about uploaded files via HTTP POST method. It's used when dealing with file uploads.
+5. **$_COOKIE**: Contains data sent to the script via HTTP cookies. It holds key-value pairs of cookie names and their values.
+6. **$_SESSION**: Contains session variables available to the current script. It's used to store session data across multiple pages or requests.
+7. **$_SERVER**: Contains information about the server and execution environment. It provides details such as server name, request method, script filename, and more.
+8. **$_ENV**: Contains environment variables passed to the PHP script.
+9. **$GLOBALS**: Contains a reference to all variables available in the global scope of the script.
+
+$value = $_GET['key'];
+$value = $_POST['key'];
+$value = $_REQUEST['key'];
+$file = $_FILES['file_input_name'];
+$value = $_COOKIE['cookie_name'];
+session_start(); $value = $_SESSION['key'];
+$value = $_SERVER['key'];
+$value = $_ENV['key'];
+$value = $GLOBALS['key'];
