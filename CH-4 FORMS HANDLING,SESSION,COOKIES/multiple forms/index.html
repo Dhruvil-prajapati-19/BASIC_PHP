@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<!--multiple forms and multi summit button-->
+<body>
+    <h1>User Registration Form</h1>
+    <form action="registration.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <button type="submit" name="submit" value="registration">Submit</button>
+    </form>
+
+    <h2>Optional Personal details</h2>
+    <form action="personalDetails.php" method="post">
+        
+        <label for="phoneNumber">User Phone Number</label>
+        <input type="number" id="phoneNumber" name="phoneNumber"><br><br>
+
+        <label for="address">Address</label><br>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+
+        <button type="submit" name="submit" value="personalDetails">Submit</button>
+    </form>
+</body>
+
+</html>
