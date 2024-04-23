@@ -1,24 +1,22 @@
 <?php
+// registration.php
 // Enable error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// Include configuration file
+include('config.php');
+
+// Create connection
+$conn = new mysqli($_ENV['DB_SERVER'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD'], $_ENV['DB_DATABASE']);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
 // Handle form submission
 if(isset($_POST['submit'])){
-    // Database connection parameters
-    $servername = "localhost"; // Change this to your MySQL server hostname
-    $username = "root"; // Change this to your MySQL username
-    $password = "Admin@025025"; // Change this to your MySQL password
-    $database = "UsersForms"; // Change this to your database name
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $database);
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
     // Retrieve form data
     $name = $_POST['name'];
     $username = $_POST['username'];
@@ -42,11 +40,4 @@ if(isset($_POST['submit'])){
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-    // Close database connection
-    $conn->close();
-} else {
-    // Show error message when form is not submitted
-    echo "Form submission error: Form not submitted.";
 }
-
