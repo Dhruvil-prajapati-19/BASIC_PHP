@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h2>Employee Information Form</h2>
+    <form action="index.php" method="post">
+        <input type="number" id="employee_id" name="employee_id" placeholder="Employee ID" required><br><br>
+        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+        <select id="department" name="department" required>
+            <option value="" disabled selected hidden>Department</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+            <option value="IT">IT</option>
+            <option value="Marketing">Marketing</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
