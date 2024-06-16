@@ -10,8 +10,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 if($conn){
 // Step 3: Select query to fetch all customer records
-$sql_select = "SELECT Cust_ID, Cust_name, Contact_no, Address FROM Customer";
-$result = $conn->query($sql_select);
+$q = "SELECT Cust_ID, Cust_name, Contact_no, Address FROM Customer";
+$result = $conn->query($q);
 
 // Step 4: Display data in table format
 if ($result->num_rows > 0) {
