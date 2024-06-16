@@ -18,6 +18,7 @@ if ($conn)
 
     //Step 2: write the SQL query 
     $q = "INSERT INTO Customer (Cust_ID, Cust_name, Contact_no, Address) VALUES ('$Cust_ID', '$Cust_name', '$Contact_no', '$Address')";
+   //$q = "DELETE FROM Customer WHERE Cust_ID = '$Cust_ID'";
 
     //  Step 3: Execute the query
     if ($conn->query($q) === TRUE) {
