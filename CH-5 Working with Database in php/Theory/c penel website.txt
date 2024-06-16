@@ -1,0 +1,47 @@
+**Website Hosting Using cPanel: Step by Step**
+
+1. **Login to cPanel:**
+   - Access cPanel by entering your hosting provider's URL followed by `/cpanel` (e.g., `http://yourdomain.com/cpanel`) in a web browser.
+   - Log in with your username and password provided by your hosting provider.
+
+2. **Navigate to Domain Management:**
+   - Once logged in, locate the "Domains" or "Domain Manager" section in cPanel.
+   - Here, you can manage existing domains or add new ones.
+
+3. **File Management with File Manager:**
+   - Find the "File Manager" icon in cPanel (typically under "Files" or "File Management").
+   - Use File Manager to upload, download, delete, and edit website files directly from your web browser.
+
+4. **Database Management:**
+   - Look for the "MySQL Databases" or "Database" section in cPanel.
+   - Create new databases and assign users with appropriate permissions.
+   - Access phpMyAdmin to manage database tables, import/export data, and run SQL queries.
+
+5. **Email Setup:**
+   - Navigate to the "Email" or "Email Accounts" section in cPanel.
+   - Create email accounts associated with your domain (e.g., info@yourdomain.com).
+   - Configure email forwarding, autoresponders, and spam filters.
+
+6. **SSL/TLS Configuration:**
+   - Go to "SSL/TLS" or "Security" section in cPanel.
+   - Install SSL certificates to secure your website (HTTPS).
+   - Manage certificates and configure security settings.
+
+7. **Backup and Restore:**
+   - Find the "Backup" or "Backups" section in cPanel.
+   - Schedule regular backups of your website files, databases, and email accounts.
+   - Restore backups if needed in case of data loss or website issues.
+
+8. **Install Applications (Optional):**
+   - Look for an "Applications" or "Softaculous" section in cPanel.
+   - Install popular web applications like WordPress, Joomla, or Drupal with one-click installations.
+
+9. **Monitor Website Metrics:**
+   - Check the "Metrics" or "Statistics" section in cPanel.
+   - Monitor website traffic, bandwidth usage, visitor statistics, and error logs.
+
+10. **Log Out and Support:**
+    - Always log out securely from cPanel once you have finished your tasks.
+    - Access help documentation, tutorials, or contact support through cPanel if you encounter any issues or have questions.
+
+Following these steps in cPanel allows you to effectively manage and host your website, covering essential tasks from domain management to security configurations and application installations.

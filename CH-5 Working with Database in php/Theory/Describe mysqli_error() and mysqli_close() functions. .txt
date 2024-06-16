@@ -1,0 +1,42 @@
+
+### `mysqli_error()`
+
+- **Purpose:** Retrieves the error message from the most recent MySQL operation.
+- **Usage:** Typically used after executing MySQL queries or connection attempts to handle errors.
+- **Syntax:** `mysqli_error($conn);`
+  - `$conn`: MySQL connection object returned by `mysqli_connect()`.
+- **Return Value:** Returns a string containing the error message from the last MySQL operation.
+- **Example:**
+  ```php
+  $conn = mysqli_connect("localhost", "root", "password", "mydatabase");
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
+
+  $sql = "SELECT * FROM NonexistentTable";
+  $result = mysqli_query($conn, $sql);
+  if (!$result) {
+      echo "Error: " . mysqli_error($conn);
+  }
+  ```
+
+### `mysqli_close()`
+
+- **Purpose:** Closes the connection to the MySQL server.
+- **Usage:** Ensures proper cleanup and resource management after database operations are completed.
+- **Syntax:** `mysqli_close($conn);`
+  - `$conn`: MySQL connection object returned by `mysqli_connect()`.
+- **Return Value:** None (void).
+- **Example:**
+  ```php
+  $conn = mysqli_connect("localhost", "root", "password", "mydatabase");
+  // Perform database operations
+
+  mysqli_close($conn);
+  ```
+
+### Key Points:
+- **`mysqli_error()`:** Retrieves and displays MySQL errors for troubleshooting.
+- **`mysqli_close()`:** Safely closes the MySQL database connection to free resources.
+
+Understanding and using these functions effectively is crucial for managing database connections and handling errors in PHP applications that interact with MySQL databases.

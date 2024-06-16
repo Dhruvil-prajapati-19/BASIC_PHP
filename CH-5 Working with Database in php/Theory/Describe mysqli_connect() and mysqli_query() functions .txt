@@ -1,0 +1,35 @@
+### `mysqli_connect()`
+
+- **Purpose:** Connects PHP to a MySQL database server.
+- **Syntax:** `mysqli_connect($servername, $username, $password, $dbname);`
+- **Parameters:**
+  - `$servername`: MySQL server host name (e.g., "localhost").
+  - `$username`: MySQL username for database access.
+  - `$password`: Password for the MySQL user.
+  - `$dbname`: (Optional) Name of the database to connect to.
+- **Return Value:** Returns a connection object (`$conn`) on success, or `false` on failure.
+- **Example:**
+  ```php
+  $conn = mysqli_connect("localhost", "root", "password", "mydatabase");
+  ```
+
+### `mysqli_query()`
+
+- **Purpose:** Executes SQL queries on a MySQL database.
+- **Syntax:** `mysqli_query($conn, $sql);`
+- **Parameters:**
+  - `$conn`: MySQL connection object returned by `mysqli_connect()`.
+  - `$sql`: SQL query to be executed.
+- **Return Value:** Returns a result object for SELECT queries, `true` for successful INSERT/UPDATE/DELETE queries, or `false` on failure.
+- **Example:**
+  ```php
+  $sql = "SELECT * FROM Customers";
+  $result = mysqli_query($conn, $sql);
+  ```
+
+### Key Points:
+- **Connect:** Use `mysqli_connect()` to start a connection with MySQL.
+- **Query:** Use `mysqli_query()` to send SQL commands (SELECT, INSERT, UPDATE, DELETE).
+- **Result Handling:** `mysqli_query()` returns different values based on the type of SQL operation performed.
+
+Remembering these basics will help you understand how to connect to MySQL and execute queries in PHP effectively during exams or real-world scenarios.
