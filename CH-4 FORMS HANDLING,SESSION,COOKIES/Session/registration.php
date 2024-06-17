@@ -8,8 +8,7 @@
     <input type="submit" name="logout" value="Logout">
 </form>
     
-    <?php
-// defination : cookies are small text files that are stored on a user's computer by a server 
+<?php
 
 // Step 1: Start session
 session_start();
@@ -34,9 +33,9 @@ if(isset($_SESSION['name'])) {
 // Step 5: Modify session data (optional)
 // Example: Change the name in session data
 if(isset($_SESSION['name'])) {
-    $_SESSION['name'] =   $_SESSION['name'] ." ". "HINDU";
+  $change =  $_SESSION['name'] =   $_SESSION['name'] ." ". "HINDU";
     echo "<p>Name updated in session.</p>";
-    echo  $_SESSION['name'];
+    echo   $change;
 }
 
 // Step 6: Destroy session (optional)

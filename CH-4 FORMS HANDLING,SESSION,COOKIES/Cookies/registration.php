@@ -1,5 +1,5 @@
 <?php
-// defination: cookie is a small text file that a server places on a user's computer
+// defination : cookies are small text files that are stored on a user's computer by a server 
 
 // Step 1: create cookies and Destory cookies
 // setcookie(name, value, expiry);
