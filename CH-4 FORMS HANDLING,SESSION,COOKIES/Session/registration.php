@@ -16,13 +16,14 @@ session_start();
 // Step 2: Handle form submission
 if(isset($_POST['submit']))
  {
-    // Step 3: Store form data in session variables
+    // Step 3: Store form data in session variables from index form
     $_SESSION['name'] = $_POST['name'];
+    $_SESSION['uid'] = $_POST['uid'];
 
     echo "Registration data stored in session.";
 }
 
-// Step 4: Access session data
+// Step 4: Access session data and Display session data
 if(isset($_SESSION['name'])) {
     echo "<h2>Session Data:</h2>";
     echo "uid: " . $_SESSION['uid'] . "<br>";
