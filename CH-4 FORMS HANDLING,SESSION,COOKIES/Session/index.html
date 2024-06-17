@@ -7,26 +7,17 @@
     <title>User Registration Form</title>
 </head>
 <body>
-    <h1>User Registration Form</h1>
+    <h1>User Direct Login Form</h1>
     <form action="registration.php" method="post">
+
+        <label for="Userid">Uid</label>
+        <input type="text"  name="uid"><br><br>
+
         <label for="name">Name</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" name="name"><br><br>
 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username"><br><br>
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"><br><br>
-
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email"><br><br>
-
-        <button type="submit" name="submit" value="registration">Login</button>
+        <input type="submit" name="submit" value="Submit">
     </form>
 
-    <form action="registration.php" method="get">
-        <input type="hidden" name="logout" value="true">
-        <button type="submit">Logout</button>
-    </form>
 </body>
 </html>

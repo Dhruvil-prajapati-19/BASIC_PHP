@@ -1,40 +1,39 @@
 <?php
-// Step 1: Handle form submission and create cookies
-if(isset($_POST['submit']) && $_POST['submit'] == 'registration') {
-    // Step 1: Create cookies
-    $expiry = time() + 2; // Expiry time set to 10 seconds from now
-    setcookie('name', $_POST['name'], $expiry);
-    setcookie('username', $_POST['username'], $expiry);
-    setcookie('email', $_POST['email'], $expiry);
-  
+// defination: cookie is a small text file that a server places on a user's computer
+
+// Step 1: create cookies and Destory cookies
+// setcookie(name, value, expiry);
+
+if (isset($_POST['submit'])) {
+    
+    $expiry = time() + 30; // Set cookies to expire in 30 seconds
+    setcookie('name', $_POST['name'], $expiry); 
+    setcookie('uid', $_POST['uid'], $expiry);
     echo "Registration data stored in cookies.";
 }
 
-// Step 2: Access and assign cookies
-if(isset($_COOKIE['name'])) {
-    $name = $_COOKIE['name'];
-    $username = $_COOKIE['username'];
-    $email = $_COOKIE['email'];
+// Step 2: Access and display cookies 
+// syntax of Access cookies :  $_COOKIE[''];
 
-    echo "<h2>Cookie Data:</h2>";
-    echo "Name: $name<br>";
-    echo "Username: $username<br>";
-    echo "Email: $email<br>";
+if (isset($_COOKIE['name']) && isset($_COOKIE['uid'])) {
+    $name = $_COOKIE['name'];
+    $uid = $_COOKIE['uid'];
+
+    echo "<h2>Display Cookie Data:</h2>";
+    echo "Name: $name" ."<br>";
+    echo "Uid: $uid";
+
+} else {
+    echo "No cookies found or cookies have expired.";
 }
 
-// Step 3: Destroy cookies
-if(isset($_GET['logout']))
- {
-    // Step 3: Destroy cookies by setting their expiry time to the past
-    if(isset($_COOKIE['name'])) {
-        setcookie('name', '', time() - 3600);
-    }
-    if(isset($_COOKIE['username'])) {
-        setcookie('username', '', time() - 3600);
-    }
-    if(isset($_COOKIE['email'])) {
-        setcookie('email', '', time() - 3600);
-    }
+// Step 3: Delete cookies this will delete cookies immediately
+// syntax of Delete cookies :  setcookie(name, value(empty string), expiry(-1));
 
-    echo "<p>Cookies deleted. You are logged out.</p>";
+if (isset($_COOKIE['name']) && isset($_COOKIE['uid'])) {
+    setcookie('name', '', time() - 3600);
+    setcookie('uid', '', time() - 3600);
+    echo "Cookies deleted successfully.";
+} else {
+    echo " cookies deleted.";
 }
